@@ -1,0 +1,103 @@
+{% extends 'app/main.html' %}
+{% load static %}
+{% block content %}
+
+<div class="row">
+    <div class="col-lg-4">
+        <a href="{% url 'mobile' %}">
+            <img class="thumbnail" src="{% static 'images/mobile.png' %}">
+        </a>
+        <div class="box-element product">
+            <a href="{% url 'mobile' %}">
+                <h6><strong>Mobiles</strong></h6>
+                <hr>
+            </a>
+
+
+            <a class="btn btn-outline-success" href="#">View</a>
+
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <a href="{% url 'fashion' %}">
+            <img class="thumbnail" src="{% static 'images/fashion.jpg' %}">
+        </a>
+        <div class="box-element product">
+            <a href="{% url 'fashion' %}">
+                <h6><strong>Fashion</strong></h6>
+                <hr>
+            </a>
+
+
+            <a class="btn btn-outline-success" href="#">View</a>
+
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <a href="{% url 'electronics' %}">
+            <img class="thumbnail" src="{% static 'images/electronics.jpg' %}">
+        </a>
+        <div class="box-element product">
+            <a href="{% url 'electronics' %}">
+                <h6><strong>Electronics</strong></h6>
+                <hr>
+            </a>
+
+
+            <a class="btn btn-outline-success" href="#">View</a>
+
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <a href="{% url 'top' %}">
+            <img class="thumbnail" src="{% static 'images/top_deals.jpeg' %}">
+        </a>
+        <div class="box-element product">
+            <a href="{% url 'top' %}">
+                <h6><strong>Top Deals</strong></h6>
+                <hr>
+            </a>
+
+
+            <a class="btn btn-outline-success" href="#">View</a>
+
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <a href="{% url 'fashion' %}">
+            <img class="thumbnail" src="{% static 'images/beauty.jpeg' %}">
+        </a>
+        <div class="box-element product">
+            <a href="{% url 'fashion' %}">
+                <h6><strong>Beauty</strong></h6>
+                <hr>
+            </a>
+
+
+            <a class="btn btn-outline-success" href="#">View</a>
+
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <a href="{% url 'essential' %}">
+            <img class="thumbnail" src="{% static 'images/essentials.jpeg' %}">
+        </a>
+        <div class="box-element product">
+            <a href="{% url 'essential' %}">
+                <h6><strong>Essentials</strong></h6>
+                <hr>
+            </a>
+
+
+            <a class="btn btn-outline-success" href="#">View</a>
+
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
